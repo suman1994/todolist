@@ -1,13 +1,135 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main_div {
+  width: 100%;
+  height: 100vh;
+  background: #6983aa;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.center_div {
+  width: 25%;
+  height: 80vh;
+  background-color: #e6ea91;
+  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.center_div_incdec {
+  width: 25%;
+  height: 15vh;
+  background-color: #f4f4f4;
+  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+h1 {
+  color: rgb(207, 240, 62);
+  background: transparent;
+  border-color: #8566aa;
+  padding: 6px 0 2px 0;
+  margin-bottom: 10px;
+  background-color: blueviolet;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+input {
+  text-align: center;
+  height: 30px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width: 60%;
+  border-bottom: 2px solid #8566aa;
+  outline: none;
+}
+
+button {
+  min-height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #8566aa;
+  color: #fff;
+  font-size: 40px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: #20bf6b;
+}
+
+ol {
+  margin-top: 30px;
+}
+
+ol li {
+  padding-left: 25px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #8566aa;
+  text-transform: capitalize;
+}
+
+.todo_style  {
+  width: 35px;
+  height: 30px;
+  display: flex;flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #8566aa;
+  border-radius: 50%;
+  margin: 0 15px 0 35px;
+  color: aliceblue;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.todo_style :hover {
+  background-color: #8566aa;
+}
+
+.todo_style :hover .list_style {
+  color: #c5aae5;
+}
+
+@media(max-width:768px){
+  .center_div {
+    width: 55%;
+  }
+
+  .todo_style  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px 0 15px;
+  }
+
+  button {
+    min-height: 40px;
+    width: 40px;
+    color: #fff;
+    font-size: 30px;
+    margin-left: 5px;
+  }
 }
