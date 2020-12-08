@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
+Here One is ToDoList where we can add new items and cut it or delete it. also displaying current time. Another is where we can click on plus digit will increase continue and when we click on minus digit will decrease with react hooks.
 
 ## Available Scripts
 
@@ -66,3 +67,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
